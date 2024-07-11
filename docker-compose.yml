@@ -1,0 +1,61 @@
+services:
+  filestorage:
+    build: ./minio 
+    container_name: filestorage
+    restart: always
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      - network
+
+  datawarehouse:
+    image: postgres:16.3-alpine
+    container_name: datawarehouse
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: olympic_weightlifting_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - network
+
+  datavisualization:
+    build: ./superset 
+    container_name: datavisualization
+    ports:
+      - "8088:8088"  # Adjust ports as needed
+    depends_on:
+      - datawarehouse  # Ensure datawarehouse container starts first
+    restart: always
+    networks:
+      - network
+
+  orchestrator:
+    build: ./mageai
+    container_name: orchestrator
+    ports:
+      - "6789:6789"
+    networks:
+      - network
+  
+networks:
+  network:
+    driver: bridge
+
+volumes:
+  pgdata:
+    driver: local
+  minio_data:
+    driver: local
