@@ -136,6 +136,13 @@ Mage.ai enables **distributed processing** by providing a robust framework for t
 
     </div>
 
+    These 3 Graphs are 3 correlation matrixes:
+    - Medal Count correlation to height
+    - Medal Count correlation to weight
+    - Medal Count correlation to IMC
+
+    All 3 Graphs consider all of the medalists athletes present in the dataset
+
 
 #### Conclusion
 
