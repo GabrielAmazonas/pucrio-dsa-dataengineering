@@ -139,7 +139,7 @@ Mage.ai enables **distributed processing** by providing a robust framework for t
 
 #### Conclusion
 
-After analysing 120 years of Olympic Weightlifting Athletes Data, and the correlation between the Height, Weight, and IMC (Weight / Height ratio) of all medalists historically, this projects concludes that:
+After analysing 120 years of Olympic Weightlifting Athletes Data, and the correlation between the Height, Weight, and IMC (Weight / Height ratio) of all medalists historically, this project concludes that:
 
 - A higher IMC *does not* correlates directly to a greater incidence of medals
 - The Height range between 160cm and 182cm have a considerable concentration of medals when compared to other height ranges
