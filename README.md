@@ -62,7 +62,7 @@ A **Data Pipeline** is a series of automated processes for moving and transformi
 Mage.ai enables **distributed processing** by providing a robust framework for task distribution, node coordination, scalability, fault tolerance, resource management, data handling, and algorithm support in a distributed computing environment. This architecture allows organizations to leverage distributed processing capabilities efficiently for a wide range of computational tasks.
 <div style="text-align: center;">
         
-![Distributed Procesing](./images/ol_data_pipeline_4.PNG)
+![Distributed Procesing](./images/ol_data_pipeline_4.png)
 
 </div>
 
