@@ -93,7 +93,7 @@ Mage.ai enables **distributed processing** by providing a robust framework for t
 
     For all the above data quality checks, the required transformation steps to mitigate the observed problems are done in the transformation before loading, more specifically in the mageai/postgresql_data_loader.py script
 
-3. The data is loaded to the object storage layer (MinIO) and stored as parquet. This is a common pattern for the raw layers of Data Lakes. No other transformations are happening at this stage. This is done on purpose so the objects stored in MinIO are a reflection of exactly what was fetched from Kaggle. This code is available at mageai/minio_data_exporter.py
+3. The data is loaded to the object storage layer (MinIO) and stored as parquet. This is a common pattern for the Bronze layers of Data Lakes. No other transformations are happening at this stage. This is done on purpose so the objects stored in MinIO are a reflection of exactly what was fetched from Kaggle. This code is available at mageai/minio_data_exporter.py
 
     <div style="text-align: center;">
         
