@@ -17,6 +17,8 @@ This project uses the Kaggle Dataset named **[120 years of Olympic history: athl
 - Mage AI: 0.9.71 - Data Orchestration
 
 ##### Running the Project locally
+**Warning** - This Docker compose configuration is *not* production ready.
+
 1. Install Docker and Docker Desktop
 2. Clone this Repository
     
@@ -45,7 +47,7 @@ This project uses the Kaggle Dataset named **[120 years of Olympic history: athl
 ### Data Engineering Concepts Applied in the Project
 
 #### Data Lake
-A **Data Lake** is a centralized repository that allows storage of structured, semi-structured, and unstructured data at scale. It enables diverse analytics and data exploration. In this project, the BRONZE layer is represented by the MinIO service (Object Storage layer)
+A **Data Lake** is a centralized repository that allows storage of structured, semi-structured, and unstructured data at scale. It enables diverse analytics and data exploration. In this project, the Data Lake BRONZE layer is represented by the MinIO service (Object Storage layer)
 
 #### Data Warehouse
 A **Data Warehouse** is a structured repository that consolidates data from various sources to support business analytics and reporting. It is optimized for querying and analysis. In this project, represented by PostgreSQL
@@ -150,6 +152,6 @@ After analysing 120 years of Olympic Weightlifting Athletes Data, and the correl
 
 - A higher IMC *does not* correlate directly to a greater incidence of medals
 - The Height range between 160cm and 182cm has a considerable concentration of medals when compared to other height ranges
-- Unlike the Height range mentioned previously, there is no Weight range that concentrates more Olympic medals historically
+- Unlike the Height range mentioned previously, there is no Weight range that concentrates more on Olympic medals historically
 
 
