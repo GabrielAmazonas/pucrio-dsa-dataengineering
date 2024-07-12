@@ -130,7 +130,7 @@ Mage.ai enables **distributed processing** by providing a robust framework for t
 
     </div>
 
-    Based on the above query, a Dataset on Apache Superset itself was created - an entity that enables the creation of Graphs and Dashboards (Groups of Graphs)
+    Based on queries like the above one, a Dataset on Apache Superset itself was created - an entity that enables the creation of Graphs and Dashboards (Groups of Graphs)
 
     <div style="text-align: center;">
         
